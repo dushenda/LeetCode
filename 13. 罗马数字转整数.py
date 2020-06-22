@@ -18,14 +18,29 @@ class Solution:
             return sym2nums[s]
         else:
             res = 0
-            for i in range(len(s) - 1):
+            i = 0
+            while i < len(s) - 1:
                 if sym2nums[s[i]] < sym2nums[s[i + 1]]:
                     res += sym2nums[s[i + 1]] - sym2nums[s[i]]
+                    i += 1
+                else:
+                    res += sym2nums[s[i]]
+                i += 1
+            if i == len(s) - 1:
+                res += sym2nums[s[i]]
+        return res
 
 
 def main():
-    pass
+    input = 'MCMXCIV'
+    s = Solution()
+    res = s.romanToInt(input)
+    print(res)
 
 
 if __name__ == '__main__':
     main()
+    # it = iter(range(10))
+    # for x in it:
+    #     print(x)
+    #     next(it)
