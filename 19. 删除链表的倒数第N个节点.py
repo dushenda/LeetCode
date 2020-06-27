@@ -47,6 +47,26 @@ class Solution:
                 list_Node.pop(lens - n)
         return list_Node[0]
 
+    def removeNthFromEnd2(self, head: ListNode, n: int) -> ListNode:
+        p = head
+        size = 1
+        while p.next:
+            size += 1
+            p = p.next
+        if size == 1:
+            head = head.next
+        else:
+            if n == size:
+                head = head.next
+            else:
+                n2 = size - n - 1
+                p = head
+                while n2:
+                    p = p.next
+                    n2 -= 1
+                p.next = p.next.next
+        return head
+
 
 def main():
     ln1 = ListNode(1)
@@ -55,7 +75,7 @@ def main():
     ln1.next = ln2
     ln2.next = ln3
     s = Solution()
-    res = s.removeNthFromEnd(ln1, 1)
+    res = s.removeNthFromEnd2(ln1, 1)
     while res.next:
         print(res.val)
         res = res.next
