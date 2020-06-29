@@ -39,9 +39,10 @@ class Solution:
         # 递归出口
         if not head or not head.next:
             return head
-        # 递归式
-        a = head
-        b = self.reverseList2(a.next)
+        cur = self.reverseList2(head.next)
+        head.next.next = head
+        head.next = None
+        return cur
 
 
 def main():
@@ -51,7 +52,7 @@ def main():
         tmp.next = ListNode(i)
         tmp = tmp.next
     s = Solution()
-    res = s.reverseList(a)
+    res = s.reverseList2(a)
     while res:
         print(res.val)
         res = res.next
