@@ -34,6 +34,17 @@ class Solution:
         cur.next = pre
         return cur
 
+    def reverseList3(self, head: ListNode) -> ListNode:
+        # 迭代2
+        pre = None
+        cur = head
+        while cur:
+            temp = cur.next  # 先把原来cur.next位置存起来
+            cur.next = pre
+            pre = cur
+            cur = temp
+        return pre
+
     def reverseList2(self, head: ListNode) -> ListNode:
         # 递归
         # 递归出口
