@@ -4,16 +4,19 @@ from collections import Counter
 class Solution:
     # def canMakePaliQueries(self, s: str, queries: List[List[int]]) -> List[bool]:
     def canMakePaliQueries(self, s, queries):
-        # 超时
+        # dp1成功了~~~
         res = []
+        dp_cnt = [[0 for _ in range(26)] for _ in range(len(s) + 1)]
+        for i, si in enumerate(s):
+            dp_cnt[i + 1] = [j for j in dp_cnt[i]]
+            dp_cnt[i + 1][ord(si) - ord('a')] += 1
         for left, right, k in queries:
-            if k >= 13:# 这个挺不错的
+            if k >= 13:  # 这个挺不错的
                 res.append(True)
             else:
-                sub_list = s[left:right + 1]  # 得到子串
-                dic = Counter(sub_list)
-                cnt = sum([i % 2 for i in dic.values()])
-                if len(sub_list) % 2 == 0:
+                cnt_list = [(dp_cnt[right + 1][i] - dp_cnt[left][i]) % 2 for i in range(26)]
+                cnt = sum(cnt_list)
+                if (right - left + 1) % 2 == 0:
                     res.append(cnt <= 2 * k)
                 else:
                     res.append(cnt <= 2 * k + 1)
@@ -33,6 +36,13 @@ class Solution:
                 c1 = Counter(c1)['1']
                 ans[i] = k >= (c1 // 2)
         return ans
+
+    def canMakePaliQueries3(self, s, queries):
+        # 奇怪解法
+        cnt = [0]
+        for i, v in enumerate(s):
+            cnt.append(cnt[i] ^ 1 << (ord(v) - 97))
+        return [bin(cnt[i] ^ cnt[j + 1]).count('1') // 2 <= k for i, j, k in queries]
 
 
 if __name__ == '__main__':
