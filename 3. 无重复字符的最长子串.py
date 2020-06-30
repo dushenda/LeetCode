@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 3. 无重复字符的最长子串.py
 @author     : CALIBRATION
 @time       : 2020/5/30 15:59

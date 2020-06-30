@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 454.四数相加.py
 @author     : CALIBRATION
 @time       : 2020/5/29 13:26

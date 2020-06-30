@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 1051. 高度检查器.py
 @author     : CALIBRATION
 @time       : 2020/6/13 14:46

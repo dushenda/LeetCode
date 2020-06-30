@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 14. 最长公共前缀.py
 @author     : CALIBRATION
 @time       : 2020/6/15 10:06

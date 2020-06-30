@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 8. 字符串转换整数 (atoi).py
 @author     : CALIBRATION
 @time       : 2020/6/17 10:17

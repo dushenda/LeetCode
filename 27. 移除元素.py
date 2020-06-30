@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 27. 移除元素.py
 @author     : CALIBRATION
 @time       : 2020/6/29 19:33

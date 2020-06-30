@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 4. 寻找两个正序数组的中位数.py
 @author     : CALIBRATION
 @time       : 2020/6/5 9:35

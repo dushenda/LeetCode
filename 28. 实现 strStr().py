@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 28. 实现 strStr().py
 @author     : CALIBRATION
 @time       : 2020/6/29 19:43

@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 67. 二进制求和.py
 @author     : CALIBRATION
 @time       : 2020/6/23 10:48

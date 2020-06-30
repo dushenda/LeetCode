@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 297. 二叉树的序列化与反序列化.py
 @author     : CALIBRATION
 @time       : 2020/6/16 15:21

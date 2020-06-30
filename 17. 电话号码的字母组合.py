@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 17. 电话号码的字母组合.py
 @author     : CALIBRATION
 @time       : 2020/6/23 15:59

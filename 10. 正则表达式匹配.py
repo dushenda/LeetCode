@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 10. 正则表达式匹配.py
 @author     : CALIBRATION
 @time       : 2020/6/17 12:31

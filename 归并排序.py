@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 归并排序.py
 @author     : CALIBRATION
 @time       : 2020/6/5 12:13
