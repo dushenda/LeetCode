@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 911.~在线选举.py
 @author     : CALIBRATION
 @time       : 2020/6/13 14:34

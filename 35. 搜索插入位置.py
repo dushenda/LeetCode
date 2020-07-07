@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 35. 搜索插入位置.py
 @author     : CALIBRATION
 @time       : 2020/6/29 22:38

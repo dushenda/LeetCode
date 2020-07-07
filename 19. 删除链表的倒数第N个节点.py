@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 19. 删除链表的倒数第N个节点.py
 @author     : CALIBRATION
 @time       : 2020/6/24 16:42

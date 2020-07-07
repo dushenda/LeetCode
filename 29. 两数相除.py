@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 29. 两数相除.py
 @author     : CALIBRATION
 @time       : 2020/6/29 19:58
@@ -47,15 +47,31 @@ class Solution:
         return max(-limit, min(limit - 1, -res if is_neg else res))
 
     def divide3(self, dividend: int, divisor: int) -> int:
-        pass
-        #递归
+        # 递归
+        def dg(dividend: int, divisor: int) -> int:
+            if divisor > dividend:
+                return 0
+            div, track = divisor, 1
+            while dividend >= (div << 1):
+                div <<= 1
+                track <<= 1
+            dividend -= div
+            return dg(dividend, divisor) + track
+
+        limit = 2 ** 31
+        is_neg = (dividend < 0) ^ (divisor < 0)
+        dividend, divisor = abs(dividend), abs(divisor)
+        if is_neg:
+            return max(-dg(dividend, divisor), -limit)
+        else:
+            return min(dg(dividend, divisor), limit - 1)
 
 
 def main():
     dividend = 7
     divisor = -3
     s = Solution()
-    res = s.divide(dividend, divisor)
+    res = s.divide3(dividend, divisor)
     print(res)
 
 

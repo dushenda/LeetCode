@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 二分查找.py
 @author     : CALIBRATION
 @time       : 2020/6/5 18:29

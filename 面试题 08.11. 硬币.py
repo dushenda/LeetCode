@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 面试题 08.11. 硬币.py
 @author     : CALIBRATION
 @time       : 2020/6/15 9:37

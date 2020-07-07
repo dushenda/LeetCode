@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 9.回文数.py
 @author     : CALIBRATION
 @time       : 2020/6/2 15:28

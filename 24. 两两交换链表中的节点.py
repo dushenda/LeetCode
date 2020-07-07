@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 24. 两两交换链表中的节点.py
 @author     : CALIBRATION
 @time       : 2020/6/28 16:16

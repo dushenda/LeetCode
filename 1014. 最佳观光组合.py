@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 1014. 最佳观光组合.py
 @author     : CALIBRATION
 @time       : 2020/6/17 8:09

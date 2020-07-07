@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 23. 合并K个排序链表.py
 @author     : CALIBRATION
 @time       : 2020/6/28 15:09

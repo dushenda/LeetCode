@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : LintCode-669.Coin Change.py
 @author     : CALIBRATION
 @time       : 2020/6/13 16:45

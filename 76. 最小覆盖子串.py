@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 76. 最小覆盖子串.py
 @author     : CALIBRATION
 @time       : 2020/5/30 19:41

@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 5.最长回文子串.py
 @author     : CALIBRATION
 @time       : 2020/6/13 15:09

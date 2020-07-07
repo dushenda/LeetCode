@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 12. 整数转罗马数字.py
 @author     : CALIBRATION
 @time       : 2020/6/22 20:34

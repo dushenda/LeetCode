@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 16. 最接近的三数之和.py
 @author     : CALIBRATION
 @time       : 2020/6/23 14:53

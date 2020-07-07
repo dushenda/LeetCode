@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 面试题 16.18. 模式匹配.py
 @author     : CALIBRATION
 @time       : 2020/6/22 11:31

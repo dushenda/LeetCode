@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 6. Z 字形变换.py
 @author     : CALIBRATION
 @time       : 2020/6/17 9:22

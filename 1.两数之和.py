@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 1.两数之和.py
 @author     : CALIBRATION
 @time       : 2020/4/30 11:07

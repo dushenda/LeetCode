@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : priority_queue.py
 @author     : CALIBRATION
 @time       : 2020/6/28 15:53

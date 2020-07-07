@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 7.整数反转.py
 @author     : CALIBRATION
 @time       : 2020/6/2 14:24

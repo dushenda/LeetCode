@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : Tdeque.py
 @author     : CALIBRATION
 @time       : 2020/6/28 15:31

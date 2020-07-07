@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 25. K 个一组翻转链表.py
 @author     : CALIBRATION
 @time       : 2020/6/28 19:23

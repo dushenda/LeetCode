@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 70. 爬楼梯.py
 @author     : CALIBRATION
 @time       : 2020/6/13 13:58

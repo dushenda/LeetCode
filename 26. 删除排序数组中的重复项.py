@@ -3,7 +3,7 @@
 
 """
 @ide        : PyCharm
-@project    : LeeCode
+@project    : LeetCode
 @file       : 26. 删除排序数组中的重复项.py
 @author     : CALIBRATION
 @time       : 2020/6/29 19:22
