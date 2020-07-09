@@ -44,15 +44,6 @@ class Solution:
             pre = pre.next.next
         return dummy_head.next
 
-    def swapPairs3(self, head: ListNode) -> ListNode:
-        # 递归的终止条件
-        if not (head and head.next):
-            return head
-        tmp = head.next
-        head.next = self.swapPairs3(tmp.next)
-        tmp.next = head
-        return tmp
-
 
 def main():
     pass
