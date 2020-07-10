@@ -13,11 +13,26 @@
 
 class Solution:
     def countAndSay(self, n: int) -> str:
-        pass
+        if (n == 1): return '1'
+        num = self.countAndSay(n - 1) + "*"
+        print(num)
+        temp = list(num)
+        count = 1
+        strBulider = ''
+        for i in range(len(temp) - 1):
+            if temp[i] == temp[i + 1]:
+                count += 1
+            else:
+                strBulider += str(count) + temp[i]
+                count = 1
+        return strBulider
 
 
 def main():
-    pass
+    n = 20
+    sol = Solution()
+    res = sol.countAndSay(n)
+    print(res)
 
 
 if __name__ == '__main__':
