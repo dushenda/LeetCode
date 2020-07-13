@@ -16,7 +16,6 @@ class Solution(object):
         size = len(candidates)
         if size == 0:
             return []
-
         # 剪枝是为了提速，在本题非必需
         candidates.sort()
         # 在遍历的过程中记录路径，它是一个栈
@@ -46,7 +45,11 @@ class Solution(object):
 
 
 def main():
-    pass
+    candidates = [2, 3, 6, 7]
+    target = 7
+    sol = Solution()
+    res = sol.combinationSum(candidates, target)
+    print(res)
 
 
 if __name__ == '__main__':
