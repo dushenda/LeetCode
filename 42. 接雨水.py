@@ -75,16 +75,48 @@ class Solution(object):
             res += heightx
         return res
 
-    def trap4(self, hight):
-        pass
+    def trap4(self, height):
+        if not height:
+            return 0
+        max_left, max_right = 0, 0
+        size = len(height)
+        res = 0
+        for i in range(1, size - 1):
+            max_left = max(max_left, height[i - 1])
+            if height[i] >= max_right:
+                max_right = max(height[i + 1:])
+            min_height = min(max_left, max_right)
+            if min_height > height[i]:
+                res += (min_height - height[i])
+        return res
+
+    def trap5(self, height):
+        """
+        :type height: List[int]
+        :rtype: int
+        """
+        n = len(height)
+        # 同时从左往右和从右往左计算有效面积
+        s1, s2 = 0, 0
+        max1, max2 = 0, 0
+        for i in range(n):
+            if height[i] > max1:
+                max1 = height[i]
+            if height[n - i - 1] > max2:
+                max2 = height[n - i - 1]
+            s1 += max1
+            s2 += max2
+        # 积水面积 = S1 + S2 - 矩形面积 - 柱子面积
+        res = s1 + s2 - max1 * len(height) - sum(height)
+        return res
 
 
 def main():
     sol = Solution()
     a = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
-    a2 = []
+    a2 = [0]
     a3 = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
-    res = sol.trap3(a)
+    res = sol.trap4(a2)
     print(res)
 
 
