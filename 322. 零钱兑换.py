@@ -15,7 +15,6 @@ class Solution:
     def coinChange(self, coins: list, amount: int) -> int:
         if amount == 0:
             return 0
-        coins = sorted(coins, reverse=True)
         dp = [-1 for _ in range(amount + 1)]
         for i in range(1, amount + 1):
             if i in coins:
@@ -27,6 +26,24 @@ class Solution:
                 if len(cnt) > 0:
                     dp[i] = min(cnt)
         return dp[amount]
+
+    def coinChange2(self, coins: list, amount: int) -> int:
+        # 递归
+        memo = dict()
+
+        def dp(n):
+            if n in memo: return memo[n]
+            if n == 0: return 0
+            if n < 0: return -1
+            res = float('INF')
+            for coin in coins:
+                subproblem = dp(n - coin)
+                if subproblem == -1: continue
+                res = min(res, 1 + subproblem)
+            memo[n] = res if res != float('INF') else -1
+            return memo[n]
+
+        return dp(amount)
 
 
 def main():
