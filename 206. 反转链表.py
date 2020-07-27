@@ -55,6 +55,14 @@ class Solution:
         head.next = None
         return cur
 
+    def reverseList4(self, head: ListNode) -> ListNode:
+        if not head or not head.next:
+            return head
+        nextNode = self.reverseList4(head.next)
+        head.next.next = head
+        head.next = None
+        return nextNode
+
 
 def main():
     a = ListNode(1)
@@ -63,7 +71,7 @@ def main():
         tmp.next = ListNode(i)
         tmp = tmp.next
     s = Solution()
-    res = s.reverseList2(a)
+    res = s.reverseList4(a)
     while res:
         print(res.val)
         res = res.next

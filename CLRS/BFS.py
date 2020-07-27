@@ -30,13 +30,12 @@ def bfs2(graph, s):
     discovered.add(s)
     while len(deque) > 0:
         vertex = deque.pop(0)
-        near_node = graph[vertex]
-        for w in near_node:
+        for w in graph[vertex]:
             if w not in discovered:
                 discovered.add(w)
                 deque.append(w)
         print(vertex)
-    return pre
+    return
 
 
 def dfs2(graph: dict, s, discovered: set) -> None:
