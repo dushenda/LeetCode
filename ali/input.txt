@@ -1,0 +1,41 @@
+1. input()和sys.stdin.readline()的区别
+input()会自动把接受字符末尾的/n(换行符)给去掉
+sys.stdin.readline()则不会把/n去掉，因此使用时，一般与strip()结合，即sys.stdin.readline().strip(),这样的话就与input()效果一样了
+2. 将接收的字符或字符串转成整型
+因为标准输入方式会把输入都转成字符或者字符串形式，所以需要整型时要转换一下。
+第一种情况（接受单行单输入）：
+num = int(input())
+第二种情况（接受单行多输入，转换为数组）：
+line = input()
+if line ==''
+    break
+lines = line.split()
+lines = list(map(int, lines)) #把lines里面的字符都映射成整型然后组成一个list
+第三种情况 （多行多输入）：
+假设第一个输入n给定你行数
+row = input()
+lines_multrows = []
+for n in range(row):    #没有n 用while true 也ok
+    line = input()
+    if line=='':
+        break
+    lines = line.split()
+    lines = list(map(int,lines))
+    lines_multrows.append(lines) #多行数组
+3.总结
+一般情况下都要用循环读入，因为调试的时候会用多种样例
+
+
+try:
+    while True:
+        row = input()
+        lines_multrows = []
+        for n in range(row):    #没有n 用while true 也ok
+            line = input()
+            if line=='':
+                break
+        lines = line.split()
+        lines = list(map(int,lines))
+        lines_multrows.append(lines) #多行数组
+except:
+      pass
