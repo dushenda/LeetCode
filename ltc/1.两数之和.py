@@ -96,4 +96,16 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    # main()
+    def twoSum(nums, target):
+        d = dict()
+        for i, iv in enumerate(nums):
+            if d.get(target - iv) is not None:
+                return [d.get(target - iv), i]
+            d[iv] = i
+
+
+    nums = [2, 11, 7, 15]
+    target = 9
+    res = twoSum(nums, target)
+    print(res)
