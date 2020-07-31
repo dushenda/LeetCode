@@ -53,7 +53,7 @@ class Solution:
             for i in range(gap, n):
                 temp = nums[i]
                 j = i
-                while j >= 0 and j - gap >= 0 and nums[j - gap] > temp:
+                while j - gap >= 0 and nums[j - gap] > temp:
                     nums[j] = nums[j - gap]
                     j -= gap
                 nums[j] = temp
