@@ -11,36 +11,29 @@
 """
 
 
-def partition(array, l, r):
-    x = array[r]
-    i = l - 1
-    for j in range(l, r):
-        if array[j] <= x:
-            x += 1
-            array[i], array[j] = array[j], array[i]
-    array[i + 1], array[r] = array[r], array[i + 1]
+def partition(A, p, r):
+    x = A[r]
+    i = p - 1
+    for j in range(p, r):
+        if A[j] <= x:
+            i += 1
+            A[i], A[j] = A[j], A[i]
+    A[i + 1], A[r] = A[r], A[i + 1]
     return i + 1
 
 
-def quick_sort(array, l, r):
-    if l < r:
-        q = partition(array, l, r)
-        quick_sort(array, l, q - 1)
-        quick_sort(array, q + 1, r)
-    return array
-
-
-import heapq
+def quick_sort(A, p, r):
+    if p < r:
+        q = partition(A, p, r)
+        quick_sort(A, p, q - 1)
+        quick_sort(A, q + 1, r)
 
 
 def main():
-    array = [9, 7, 4, 2, 7, 5, 3]
-    res = heapq.nlargest(2, array)
-    print(res)
-    # res = quick_sort(array, 1, len(array))
-    # print(res)
-    # sorted()
-    # array.sort()
+    array = [9, 7, 7, 4, 2, 10, 5, 3]
+    quick_sort(array, 0, len(array) - 1)
+    print(array)
+
 
 if __name__ == '__main__':
     main()
