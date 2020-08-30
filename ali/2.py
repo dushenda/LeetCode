@@ -10,4 +10,4 @@ sum=0
 for a_time in range(floor_time[1]):
     selected = []
     for a_floor in range(floor_time[0]):
-
+        pass
