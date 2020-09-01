@@ -21,13 +21,23 @@ class TreeNode:
 
 class Solution:
     def isValidBST(self, root: TreeNode) -> bool:
-        def is_valid(r, min, max):
+        def is_valid(r, minv, maxv):
             if not r: return True
-            if min is not None and r.val <= min.val: return False
-            if max is not None and r.val >= max.val: return False
-            return is_valid(r.left, min, r) and is_valid(r.right, r, max)
+            if minv is not None and r.val <= minv.val: return False
+            if maxv is not None and r.val >= maxv.val: return False
+            return is_valid(r.left, minv, r) and is_valid(r.right, r, maxv)
 
         return is_valid(root, None, None)
+
+    def isValidBST2(self, root: TreeNode) -> bool:
+        nums = []
+        def traverse(r: TreeNode):
+            if r is None: return
+            traverse(r.left)
+            nums.append(r.val)
+            traverse(r.right)
+        traverse(root)
+        return all([nums[i]<nums[i+1] for i in range(len(nums)-1)])
 
 
 def main():
