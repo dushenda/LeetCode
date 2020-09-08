@@ -24,6 +24,7 @@ class Solution(object):
             if lens > res:
                 res = lens
         return res
+
     def lengthOfLongestSubstring2(self,s):
         res = 0
 
