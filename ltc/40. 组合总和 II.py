@@ -13,29 +13,34 @@
 
 class Solution(object):
     def combinationSum2(self, candidates, target):
+        def dfs(candidates, begin, size, path, res, target):
+            if target == 0 and path not in res:
+                res.append(path[:])
+                return
+            for index in range(begin, size):
+                resi = target - candidates[index]
+                if resi < 0: break
+                path.append(candidates[index])
+                dfs(candidates, index + 1, size, path, res, resi)
+                path.pop()
+
         size = len(candidates)
-        if size == 0:
-            return []
+        if size == 0: return []
         candidates.sort()
         res = []
         path = []
-        self.__dfs(candidates, 0, size, path, res, target)
+        dfs(candidates, 0, size, path, res, target)
         return res
-
-    def __dfs(self, candidates, begin, size, path, res, target):
-        if target == 0 and path not in res:
-            res.append(path[:])
-        for index in range(begin, size):
-            residue = target - candidates[index]
-            if residue < 0:
-                break
-            path.append(candidates[index])
-            self.__dfs(candidates, index + 1, size, path, res, residue)
-            path.pop()
 
 
 def main():
-    pass
+    # pass
+    import copy
+    b = [1, 2, 3, [3, 4, 5]]
+    a = b
+    c = copy.copy(b)
+    d = copy.deepcopy(a)
+    print("ida=", id(a[3]), "idb=", id(b[3]), "idc=", id(c[3]), "idd=", id(d[3]))
 
 
 if __name__ == '__main__':
